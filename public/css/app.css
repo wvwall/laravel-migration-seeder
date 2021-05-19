@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.cards {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("/img/sfondo.jpg");
+  background-size: cover;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  text-transform: uppercase;
+}
+.cards .card h1 {
+  font-size: 0.8em;
+}
+.cards .card h2 {
+  font-size: 1.1em;
+  color: #dd2c00;
+}
+.cards .card:hover {
+  background-color: #b8aeae;
+  transition: ease-in 0.5s;
+}
+.cards .card:hover h2, .cards .card:hover h5 {
+  font-size: 1.2em;
+  color: #00c853;
+  transition: ease-in 0.5s;
+}

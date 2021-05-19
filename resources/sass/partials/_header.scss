@@ -2,18 +2,16 @@
     display: flex;
     min-height: 100vh;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-evenly;
     background-image: url("/img/sfondo.jpg");
     background-size: cover;
     .card {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 250px;
-        border-radius: 50%;
-        border: 10px solid #372238;
+        
         height: 250px;
         text-align: center;
         background: linear-gradient(to right bottom,
@@ -28,14 +26,16 @@
         }
         h2 {
             font-size: 1.1em;
-            color: #FB044F;
+            color: #dd2c00;
         }
+
         &:hover {
-            background-color: #fff;
+            background-color: #b8aeae;
             transition: ease-in 0.5s;
-            h2 {
+            h2,h5 {
                 font-size: 1.2em;
-                color: #FB044F;
+                color: #00c853;
+                transition: ease-in 0.5s;
             }
         }
     }
